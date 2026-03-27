@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.mainNav {
+    background-color: #070c18 !important;
+}
+
+.mainNav .navbar-brand {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.nav-contact {
+    margin-bottom: 0;
+}
+
+.navbar-toggler{
+    border: 0px;
+    outline: none;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    min-height: 80vh;
+    text-align: center;
+    padding: 88px 50px;
+}
+
+.header h1 {
+    font-size: clamp(2.2rem, 7vw, 4.4rem);
+    line-height: 1.1;
+    color: #dfe2eb;
+}
+
+.search {
+    background-color: #23282e;
+    width: min(760px, 100%);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.search input {
+    background-color: #23282e;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: 0;
+    min-width: 0;
+}
+
+/* Card Section */
+.trendingMusic {
+    background-color: #10141a;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardSection {
+    background-color: #10141a;
+    padding-bottom: 40px;
+}
+
+.musicGrid {
+    padding: 0 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #10141a;
+}
+
+.musicCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #10141a;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    color: #ffffff;
+    overflow: hidden;
+    width: clamp(220px, 28vw, 340px);
+}
+
+.musicCard img {
+    width: 100%;
+    object-fit: cover;
+    height: clamp(220px, 32vw, 290px);
+    border-radius: 14px;
+}
+
+.musicCardTitle {
+    margin: 0;
+    font-size: 18px;
+}
+
+.theCard{
+    display: flex;
+    gap: 20px;
+    padding: 20px 80px;
+}
+
+.card {
+    padding: 20px 50px 80px;
+    /* background-color: pink; */
+    display: flex;    
+    background-color: #10141a;
+    gap: 20px;
+    line-height: 1.6;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: red; */
+    background-color: #10141a;
+    border-radius: 10px;
+    gap: 16px;
+    padding: 24px;
+    color: #ffffff;
+    overflow: hidden;
+    width: clamp(220px, 28vw, 340px);
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content img{
+    width: 100%;
+    border: 40px;
+    object-fit: cover;
+    height: clamp(220px, 32vw, 290px);
+    border-radius: 14px;
+}
+
+/* .card::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #ced8ff;
+    z-index: -1;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: -8%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%);
+    background: #e7ecff;
+    z-index: -2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+} */
+
+.content svg {
+    width: 48px;
+    height: 48px;
+}
+
+.content .para {
+    z-index: 1;
+    opacity: 1;
+    font-size: 18px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .link:hover {
+    text-decoration: underline;
+}
+
+.card:hover {
+    transform: translate(0px, -16px);
+}
+
+.card:hover .content::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover .content::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 32px;
+    background: black;
+    flex-wrap: wrap;
+}
+
+.footerCopy {
+    margin: 0;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.footerLinks {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.footerLinks p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .header {
+        min-height: 70vh;
+        padding: 72px 32px;
+    }
+
+    .search {
+        width: min(90%, 680px);
+    }
+
+    .trendingMusic {
+        padding: 30px 32px;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 0 32px 24px;
+    }
+
+    .musicGrid {
+        padding: 0 32px 24px;
+    }
+
+    .content {
+        width: calc(50% - 12px);
+        min-width: 250px;
+    }
+
+    .musicCard {
+        width: calc(50% - 12px);
+        min-width: 250px;
+    }
+
+    .footerBar {
+        padding: 14px 20px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1366px) {
+    .card {
+        padding: 0 32px 40px;
+        gap: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .content {
+        flex: 0 1 calc(33.333% - 12px);
+        max-width: calc(33.333% - 12px);
+        min-width: 0;
+        padding: 18px;
+    }
+
+    .musicGrid {
+        padding: 0 32px 40px;
+        gap: 18px;
+        justify-content: flex-start;
+    }
+
+    .musicCard {
+        flex: 0 1 calc(33.333% - 12px);
+        max-width: calc(33.333% - 12px);
+        min-width: 0;
+        padding: 18px;
+    }
+
+    .content .para {
+        font-size: 16px;
+    }
+
+    .musicCardTitle {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .content {
+        flex: 0 1 calc(50% - 12px);
+        max-width: calc(50% - 12px);
+    }
+
+    .musicCard {
+        flex: 0 1 calc(50% - 12px);
+        max-width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        min-height: auto;
+        padding: 56px 16px;
+    }
+
+    .search {
+        width: 100%;
+        padding: 10px 12px;
+        flex-wrap: wrap;
+    }
+
+    .search input {
+        order: 2;
+        flex: 1 1 100%;
+    }
+
+    .search button {
+        order: 3;
+        width: 100%;
+    }
+
+    .trendingMusic {
+        padding: 24px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card {
+        padding: 0 16px 18px;
+    }
+
+    .musicGrid {
+        padding: 0 16px 18px;
+    }
+
+    .content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .musicCard {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .footerBar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .footerLinks {
+        gap: 16px;
+    }
+}
