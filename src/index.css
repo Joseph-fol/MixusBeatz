@@ -10,7 +10,7 @@ body {
 }
 
 .mainNav {
-    background-color: #070c18 !important;
+    background-color: #070c18;
 }
 
 .mainNav .navbar-brand {
@@ -23,7 +23,7 @@ body {
     margin-bottom: 0;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: 0px;
     outline: none;
 }
@@ -106,7 +106,13 @@ body {
     font-size: 18px;
 }
 
-.theCard{
+.musicDetail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.theCard {
     display: flex;
     gap: 20px;
     padding: 20px 80px;
@@ -115,7 +121,7 @@ body {
 .card {
     padding: 20px 50px 80px;
     /* background-color: pink; */
-    display: flex;    
+    display: flex;
     background-color: #10141a;
     gap: 20px;
     line-height: 1.6;
@@ -137,7 +143,7 @@ body {
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.content img{
+.content img {
     width: 100%;
     border: 40px;
     object-fit: cover;
@@ -246,6 +252,42 @@ body {
     margin: 0;
     font-size: 0.9rem;
 }
+
+/* Modal */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Darkens the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 
 @media (max-width: 992px) {
     .header {
