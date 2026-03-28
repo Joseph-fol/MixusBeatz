@@ -17,7 +17,7 @@ const Home = () => {
 
             .catch(err => {
                 console.log(err);
-                if(err == "Failed to fetch"){
+                if (err == "Failed to fetch") {
                     alert("Something went wrong")
                 }
             })
@@ -49,16 +49,18 @@ const Home = () => {
                             {details.map((detail) => (
                                 <div className="musicCard" key={detail.id}>
                                     <img src={detail.image} alt={detail.nameOfArtist} />
-
                                     <div className='musicDetail'>
                                         <div>
                                             <p className="musicCardTitle">{detail.nameOfArtist}</p>
                                             <p style={{ color: "#ff00e5" }}>{detail.nameOfSOng}</p>
                                         </div>
+
                                         <div>
-                                            {detail.duration}
+                                            <p>{detail.duration}</p>
                                         </div>
                                     </div>
+                                    <audio src={detail.audio} controls style={{ width: "100%" }} ></audio>
+                                    <a href={detail.audio} style={{cursor:"pointer"}} >Download</a>
                                 </div>
                             ))}
                         </div>
