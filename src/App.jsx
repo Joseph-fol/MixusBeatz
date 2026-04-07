@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Header from './Header'
 import Footer from './Footer'
 import Modal from './Modal'
+import About from './About'
 
 const App = () => {
     const [selectedCard, setSelectedCard] = useState(null)
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar/>
       <Header/>
       <Home onCardClick ={(detail) => setSelectedCard(detail)} />
+      <About/>
       <Footer/>
 
       { selectedCard && (
